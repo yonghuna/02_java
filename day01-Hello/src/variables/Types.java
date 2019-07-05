@@ -34,9 +34,6 @@ public class Types {
 		System.out.println("name" + name);
 		
 		
-	
-		
-		
 
 	}
 
