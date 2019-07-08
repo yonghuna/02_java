@@ -25,6 +25,7 @@ public class TernaryTest {
 		int absX = (x >= 0) ? x : -x;
 		int absY = (y >= 0) ? y : -y;
 		
+		
 		// 3. 사용 : 출력 
 		System.out.printf("x=%d일 떄, x의 절댓값은 %d%n", x, absX);
 		System.out.printf("y=%d일 떄, y의 절댓값은 %d%n", x, absY);

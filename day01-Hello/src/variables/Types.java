@@ -25,7 +25,7 @@ public class Types {
 		
 		// 2. 초기화 구문 
 		c = 'A'; 
-		size = 100;
+		size = 100; 
 		name = "이용훈";
 		
 		// 3. 사용 : 출력 
@@ -34,7 +34,6 @@ public class Types {
 		System.out.println("name" + name);
 		
 		
-
 	}
 
 }
