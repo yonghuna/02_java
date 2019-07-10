@@ -2,6 +2,8 @@ package control.loop;
 /*
  *  1 ~ 100 사이의 홀수의 합을 구하는 클래스 
  *  for loop, continue를 활용하여 테스트 한다.
+ *  
+ *  continue : 무시하고 다음껄로  넘어감 
  */
 public class ContinueTest {
 	public static void main(String[] args) {
