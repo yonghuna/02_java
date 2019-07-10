@@ -9,11 +9,12 @@ public class SumOfOdd {
 		int sum = 0 ; 
 		while ( num <= 100) {
 			sum += num;
-			num++;
-			num++;
+			num+=2;
 		}
 		System.out.printf("1부터 100까지의 홀수의 합은 %d", sum);
 		
 	}
+	
+
 
 }

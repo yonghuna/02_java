@@ -8,7 +8,7 @@ public class SunOfEvens {
 		while (num <= 100) {
 			sum += num;
 			num++;
-			num++;
+			num+=2;
 		}
 		System.out.printf("1부터 100까지 짝수의 값은 %d", sum);
 	}

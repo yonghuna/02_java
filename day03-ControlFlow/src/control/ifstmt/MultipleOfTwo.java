@@ -29,10 +29,18 @@ public class MultipleOfTwo {
 		Scanner scan = new Scanner (System.in);
 		System.out.println("2의 배수를 입력하시오");
 		input = scan.nextInt();
-		if (input % 2 == 0) {
+		
+		// 입력 값이 0인 경우 : 0은 2의 배수 판별할 수 없습니다.
+		if (input == 0) {
+			System.out.println("0은 2의 배수 판별할수 없습니다");
+			
+		}
+		else if (input % 2 == 0) {
+		
 			result = "2의 배수입니다.";
 			System.out.printf("입력값 %d은 %s%n", input, result);
 		}
+		
 		else {
 			mod = input % 2;
 			result = "2의 배수가 아닙니다.";
