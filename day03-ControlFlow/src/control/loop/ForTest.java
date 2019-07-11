@@ -13,25 +13,22 @@ package control.loop;
 public class ForTest {
 
 	public static void main(String[] args) {
-		for(int odd = 50; odd >= 0;  odd--) {
-			if(odd % 2 == 0) {
-				System.out.println(odd);
-			}
+		/*
+		 * for(int odd = 50; odd >= 0; odd--) { if(odd % 2 == 0) {
+		 * System.out.println(odd); } }
+		 * 
+		 * 
+		 * for(int odd = 50; odd >= 0; odd--) { if(odd % 2 != 0) { continue; }
+		 * System.out.println(odd); }
+		 * 
+		 * for(int num1 = 1; num1 <= 10; num1++) { for(int num2 = 1; num2 == num1;
+		 * num2++) { System.out.printf("%d x %d = %d%n", num1, num2, num1 * num2); } }
+		 */
+		// 3. 제곱표 출력 (배열 foreach 사용)
+		int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		for(int num : numbers) {
+			System.out.printf("%2d x %2d =%3d \n",num,num, num * num);
 		}
-		
-		
-		for(int odd = 50; odd >= 0;  odd--) {
-			if(odd % 2 != 0) {
-				
-				continue;
-			}
-			System.out.println(odd);
-		}
-		
-		for(int num1 = 1; num1 <= 10; num1++) {
-			System.out.printf("%d * %d = %d%n", num1, num1, num1*num1);
-		}
-		
 	}
 
 }

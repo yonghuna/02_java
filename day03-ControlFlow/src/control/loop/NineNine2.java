@@ -9,14 +9,11 @@ public class NineNine2 {
 			System.out.printf("%d 단", stage);
 			System.out.println();
 			for (int times = 1; times <= 9; times++) {
-				System.out.printf("%"
-						+ "d * %d = %2d \t %d * %d = %2d \t %d * %d = %2d \t"
-								 , stage  ,times , stage  * times
-								 , stage  ,times + 1 , stage  * times + 1  
-								 , stage  ,times , stage  * times  );
+				
 				if (count == 3) {
 					System.out.println();
 					break;
+				
 				}
 			}
 		}

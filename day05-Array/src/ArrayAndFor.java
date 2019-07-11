@@ -13,10 +13,13 @@ public class ArrayAndFor {
 		int [] numbers = new int[10];
 		int summary = 0;
 		for (int idx = 0; idx < numbers.length; idx++) {
-			numbers[idx] = (idx + 1) * 10;
-			summary += numbers[idx];
+			System.out.println(summary);
+			numbers[idx] = (idx + 1 ) * 10;
+			summary += numbers[idx] ;
 		}
 		System.out.println(summary);
+		
 	}
+	
 
 }
