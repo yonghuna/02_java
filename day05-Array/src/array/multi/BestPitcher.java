@@ -29,10 +29,11 @@ public class BestPitcher {
 				if(min == ERA[i][input]) {
 				  System.out.printf("%d 번쨰팀 %d 선발 %1.2f투수 방어율"
 						  	        , i + 1 , input + 1, min);
+				  
 				   
 				}
 			}
-
+			
 		}
 		
 	}
