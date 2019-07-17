@@ -52,6 +52,8 @@ public class AccountTtest {
 		// (7) 출력 : 두 계좌 모두
 		myAccount.print();
 		yourAccount.print();
+		
+	
 	
 	}
 
