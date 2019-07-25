@@ -13,6 +13,7 @@ package eraser.two;
  * 생성자 정의
  * 기본생성자 명시 
  * 매개변수를 받는 생성자 : 모든 필드를 다 받도록 정의 
+ * 						  : this 키워드를 사용 
  * -----------------------------------------------------------------
  * 기능 정의 : 메소드로 생성
  * 칠판지우기 : erase() : void : "칠판을 지웠습니다." 문자열 출력 
@@ -21,10 +22,15 @@ package eraser.two;
  */
 public class Eraser {
 	// 1. 멤버변수 선언부 
+	/** 지우개 가로 길이  */
 	double width;
+	/** 지우개 세로 길이  */
 	double height;
+	/** 지우개 높이 길이  */
 	double depth;
+	/** 지우개 겹의  수 */
 	int layer;
+	/** 손잡이 색깔 */
 	String color;
 	
 	// 2. 생성자 선언
@@ -36,20 +42,22 @@ public class Eraser {
 		int layer = 0;
 		color = "null";
 	}
-	Eraser(double newWidth, double newHeight, double newDepth, int newLayer, String newColor){
-		width = newWidth;
-		height = newHeight;
-		depth = newDepth;
-		layer = newLayer;
-		color = newColor;
+	// (2) 매개변수가 있는 생성자 다섯개의 매개변수를 모두  
+	Eraser(double width, double height, double depth, int layer, String color){
+		// alt + shift + a
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
+		this.layer = layer;
+		this.color = color;
 	}
 	// 3. 메소드 선언
 	public void erase() {
 		System.out.println("칠판을 지웠습니다");
 	}
 	public void peel() {
-		if(layer - 1 >= 0) {
-			layer--;
+		if(this.layer - 1 >= 0) {
+			this.layer--;
 		}
 	}
 	public void print() {
